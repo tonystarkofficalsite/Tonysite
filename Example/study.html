@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerBy Tonystark</title>
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px; 
+          padding: 0;   
+          background-size: cover;    
+          background-image: url(./image/Wallpaper.jpg);
+        }
+      header {
+          background-color: #333;
+          color: white;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: bold;
+          margin-bottom: 20px; 
+      }
+
+      header .logo img {
+          height: 50px; 
+      }
+
+      header nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+      }
+
+      header nav ul li {
+          margin-right: 20px;
+      }
+
+      header nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+      }
+
+      header nav ul li a:hover {
+          text-decoration: underline;
+      }
+      main {
+          margin-bottom: 20px; 
+          text-align: center;
+          font-family: 'Times New Roman';
+      }
+      footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          position: relative; 
+      }
+
+      footer a {
+          color: white;
+          text-decoration: none;
+      }
+
+      footer a:hover {
+          text-decoration: underline;
+      }
+      #preloader{
+          background:  #f3f3f6 url(./image/Animation\ -\ 1745244241013.gif) no-repeat center
+          center;
+          background-size: 100%;
+          height:100vh ;
+          width: 100%;
+          position: fixed;
+          z-index: 100;
+      }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/First page/Example/Home.html">
+            <img src= "https://t3.ftcdn.net/jpg/05/57/04/58/360_F_557045816_DR70vaM0SRYQz4niBx69Yl5StGFUlkGJ.jpg" alt="Website Logo" />
+            </a>
+
+        </div><time id="current-time"></time>
+
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const timeElement = document.getElementById('current-time');
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                timeElement.dateTime = now.toISOString();
+                timeElement.innerHTML = `Today is: ${now.toLocaleDateString(undefined, options)}<br>
+                Time: ${now.toLocaleTimeString()}`;
+            }
+    
+            setInterval(updateTime, 1000);
+            updateTime();
+        </script>
+        <p>Welcome to Tonystark World </p>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="study.html"><u>Study</u></a></li>
+                <li><a href="Skill.html">Skill</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="Certificate.html">Certificate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="container text-center">
+        <center>
+                <div style="width: 920px; height: 720px; background-color: lightblue; border: 1px solid black;"><br>
+                  <img src="./png2jpg/intro school.png" width="700" height="230"><br><br>
+                  <img src="./png2jpg/sount.png" width="350" height="230">
+                  <img src="./png2jpg/band.png" width="350" height="230"><br><br>
+                  <a href="https://www.counianmhss.edu.in/"><i>Counian Matriculation Higher Secondary School</i></a>
+                  <p>I completed my school studies at Counian Matriculation Higher Secondary School</p>
+                  <p>Counian Matriculation Higher Secondary School has its humble beginning in June 1992 with the blessings of SRILA SRI GNANAPRAKASA SWAMIGAL with classes from K.G. To Std V. This is an English Medium Co-Educational Matriculation Higher Secondary school and admissions are open from Pre-K.G. To Std.XII.
+                  </p>
+                  </div><br>
+                  
+                  <div class="container text-center">
+                    <center>
+                            <div style="width: 920px; height: px; background-color: lightblue; border: 1px solid black;"><br>
+                              <img src="./png2jpg/karpagram entry.jpg" width="700" height="230"><br><br>
+                              <img src="./png2jpg/karpagram Banner.jpg" width="350" height="230">
+                              <img src="./png2jpg/top view karpagram.jpg" width="350" height="230"><br><br>
+                              <a href="https://kahedu.edu.in/"><i>Karpagam Academy of Higher Education</i></a>
+                              <p>I am student in Karpagam University for a Bachelor's degree in Computer Science</p>
+                              <p>
+                                Karpagam Academy of Higher Education (KAHE) established under Section 3 of UGC Act 1956 is approved by Ministry of Human Resource Development, Government of India. Dr. R. Vasanthakumar, the president of Karpagam Charity trust (KCT), philanthropist, industrialist, entrepreneur and culture promoter.
+                              </p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Designed and Developed By Tony.</p>
+        <p>Follow us: 
+          <a href="https://www.linkedin.com/in/selvarahul/">Linkedin </a>|
+          <a href="https://wa.me/+916385691188?text=Hi">Whatsapp</a> | 
+          <a href="https://t.me/dangertonystark">Telegram</a> | 
+          <a href="https://www.instagram.com/dangertonystark/">Instagram</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

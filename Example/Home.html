@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerBy Tonystark</title>
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px; 
+          padding: 0;   
+          background-size: cover;         
+          background-image: url(./image/Wallpaper.jpg);
+      }
+      header {
+          background-color: #333;
+          color: white;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: bold;
+          margin-bottom: 20px; 
+      }
+
+      header .logo img {
+          height: 50px; 
+      }
+
+      header nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+      }
+
+      header nav ul li {
+          margin-right: 20px;
+      }
+
+      header nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+      }
+
+      header nav ul li a:hover {
+          text-decoration: underline;
+      }
+      main {
+          margin-bottom: 20px; 
+          text-align: center;
+          font-family: 'Times New Roman';
+      }
+      footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          position: relative; 
+      }
+
+      footer a {
+          color: white;
+          text-decoration: none;
+      }
+
+      footer a:hover {
+          text-decoration: underline;
+      }
+      #pre-loader{
+        background-color: rgb(56, 24, 24) url(image/Animation\ -\ 1745244241013.gif) no-repeat center center;
+        background-size: 10%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+
+      }
+      @media screen and (max-width: 767px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            main .container div {
+                width: 90%;
+                margin: 1rem auto;
+                padding: 1rem auto;
+                box-sizing: border-box ; /* Include padding in width */
+            }
+
+            main input {
+                width: 50%; /* Full width inputs on mobile */
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /* Tablet Styles (768px - 991px) */
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            header nav ul {
+                justify-content: center;
+            }
+
+            main .container div {
+                width: 70%;
+                margin: 1.5rem auto;
+            }
+
+            main input {
+                width: 60%;
+                margin-bottom: 0.75rem;
+            }
+        }
+
+        /* Desktop Styles (min-width: 992px) - Defaults are already set, but you can add overrides */
+        @media screen and (min-width: 992px) {
+            main .container div {
+                width: 520px; /* Original width */
+                height: 160px; /* Original height */
+                border: 5px solid rgb(255, 0, 0);
+                margin: 2rem auto;
+            }
+
+            main input {
+                width: 50%;
+                margin-bottom: 1rem;
+            }
+        }
+  </style>
+</head>
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="logo">
+            <a href="/First page/Example/Home.html">
+            <img src= "https://t3.ftcdn.net/jpg/05/57/04/58/360_F_557045816_DR70vaM0SRYQz4niBx69Yl5StGFUlkGJ.jpg" alt="Website Logo" />
+            </a>
+
+        </div><time id="current-time"></time>
+
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const timeElement = document.getElementById('current-time');
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                timeElement.dateTime = now.toISOString();
+                timeElement.innerHTML = `Today is: ${now.toLocaleDateString(undefined, options)}<br>
+                Time: ${now.toLocaleTimeString()}`;
+            }
+    
+            setInterval(updateTime, 1000);
+            updateTime();
+        </script>
+        <p>Welcome to Tonystark World </p>
+        <nav>
+            <ul>
+                <li><a href="Home.html"><u>Home</u></a></li>
+                <li><a href="study.html">Study</a></li>
+                <li><a href="Skill.html">Skill</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="Certificate.html">Certificate</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+        <center>
+          <hr><b><p style="color: rgb(0, 0, 0);">
+          "Welcome to my digital space! Whether you're a curious visitor or a returning friend, I'm thrilled to have you here.<br>  
+Explore the pages to discover my passions, insights, and creative endeavors. Feel free to browse, engage, and leave your mark - your presence is valued!"
+          </b><hr></p>
+            <div class="container text-center">
+                <div style="width: 520px; height: 160px; border: 5px solid rgb(255, 0, 0);"><br>
+            <label for="username">Name:</label>
+            <input type="text" id="name" name="name" requiredplaceholder="Enter Your name Here" required><br><br>
+            <label for="email">E-mail:</label>
+            <input type="text" id="E-mail" name="E-mail" requiredplaceholder="Enter Your E-mail Here" required><br><br>
+            <button type="submit" class="btn btn-primary mb-3" onclick="alt()"><a href="./Sumbit.html">Submit</a></button>
+
+                </div>
+            </div>
+        </center>
+</main>
+    <footer>
+        <p>&copy; 2024 Designed and Developed By Tony.</p>
+        <p>Follow us: 
+            <a href="https://www.linkedin.com/in/selvarahul/">Linkedin </a>|
+            <a href="https://wa.me/+916385691188?text=Hi">Whatsapp</a> | 
+            <a href="https://t.me/dangertonystark">Telegram</a> | 
+            <a href="https://www.instagram.com/dangertonystark/">Instagram</a>
+        </p>
+    </footer>
+    <script>
+        var loader = document.getElementById("preloader");
+        
+        window.addEventListener("load",function () {
+            setTimeout(function() {
+                loader.style.display="none";
+            },1500);
+        });
+    </script>
+</body>
+</html>

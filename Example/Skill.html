@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerBy Tonystark</title>
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px; 
+          padding: 0;   
+          background-size: cover; 
+          background-image: url(./image/Wallpaper.jpg);
+        }
+      header {
+          background-color: #333;
+          color: white;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: bold;
+          margin-bottom: 20px; 
+      }
+
+      header .logo img {
+          height: 50px; 
+      }
+
+      header nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+      }
+
+      header nav ul li {
+          margin-right: 20px;
+      }
+
+      header nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+      }
+
+      header nav ul li a:hover {
+          text-decoration: underline;
+      }
+      main {
+          margin-bottom: 20px; 
+          text-align: center;
+          font-family: 'Times New Roman';
+      }
+      footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          position: relative; 
+      }
+
+      footer a {
+          color: white;
+          text-decoration: none;
+      }
+
+      footer a:hover {
+          text-decoration: underline;
+      }
+      #preloader{
+          background:  #f3f3f6 url(./image/Animation\ -\ 1745244241013.gif) no-repeat center
+          center;
+          background-size: 100%;
+          height:100vh ;
+          width: 100%;
+          position: fixed;
+          z-index: 100;
+      }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/First page/Example/Home.html">
+            <img src= "https://t3.ftcdn.net/jpg/05/57/04/58/360_F_557045816_DR70vaM0SRYQz4niBx69Yl5StGFUlkGJ.jpg" alt="Website Logo" />
+            </a>
+
+        </div><time id="current-time"></time>
+
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const timeElement = document.getElementById('current-time');
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                timeElement.dateTime = now.toISOString();
+                timeElement.innerHTML = `Today is: ${now.toLocaleDateString(undefined, options)}<br>
+                Time: ${now.toLocaleTimeString()}`;
+            }
+    
+            setInterval(updateTime, 1000);
+            updateTime();
+        </script>
+        <p>Welcome to Tonystark World </p>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</u></a></li>
+                <li><a href="study.html">Study</a></li>
+                <li><a href="Skill.html"><u>Skill</u></a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="Certificate.html">Certificate</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+        <center>
+            <div class="container text-center">
+                <div style="width: 720px; height: 450px; background-color: lightblue; border: 1px solid black;"><br>
+                    <img src="./image/html.png" width="100">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                    <img src="./image/css.png" width="75x">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                    <img src="./image/bootstrap.png" width="100"><br>
+                    <img src="./image/java.png" width="200">
+                    <img src="./image/git.png" width="100">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                    <img src="./image/git hub.png" width="100">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;<br><br>
+                    <img src="./image/Microsoft_Office_365.jpg" width="300">&nbsp&nbsp&nbsp&nbsp
+                    <img src="./image/Python.png" width="100">
+                </div>
+            </div>
+        </center>
+</main>
+    <footer>
+        <p>&copy; 2024 Designed and Developed By Tony.</p>
+        <p>Follow us: 
+            <a href="https://www.linkedin.com/in/selvarahul/">Linkedin </a>|
+            <a href="https://wa.me/+916385691188?text=Hi">Whatsapp</a> | 
+            <a href="https://t.me/dangertonystark">Telegram</a> | 
+            <a href="https://www.instagram.com/dangertonystark/">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
